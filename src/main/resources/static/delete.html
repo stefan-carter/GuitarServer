@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Manager</title>
+    <title>Delete a Guitar</title>
+
     <style>
+
         #body {
             background-color: rgb(211, 211, 211);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -27,9 +28,10 @@
 
         .bottomimages {
             position: absolute;
-            width: 60%;
+            max-width: 900px;
             opacity: 0.2;
             filter: grayscale(100%);
+            pointer-events: none;
 
         }
 
@@ -60,26 +62,23 @@
             background-color: #525253;
             color: white;
         }
-
     </style>
 </head>
 
 <body id="body">
 
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#add">Add Guitar</a>
-        <a href="#update">Update Guitar</a>
-        <a href="#delete">Delete Guitar</a>
-        <a href="#view">View Guitars</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="add.html">Add Guitar</a>
+        <a href="update.html">Update Guitar</a>
+        <a href="delete.html">Delete Guitar</a>
+        <a href="view.html">View Guitars</a>
     </div>
 
+    <h3 id="headings">Welcome to your Guitar Data Manager</h3>
+
+    <main id="DeleteGuitars"></main>
+
+    <img class="bottomimages" src="https://www.pngall.com/wp-content/uploads/2016/07/Music-PNG-Clipart.png" />
+
 </body>
-
-</html>
-</div>
-
-<h3 id="headings">Welcome to your Guitar Data Manager </h3>
-
-<img class="center" src="https://www.pngall.com/wp-content/uploads/2016/04/Database-Download-PNG.png" />
-<img class="bottomimages" src="https://www.pngall.com/wp-content/uploads/2016/07/Music-PNG-Clipart.png" />
