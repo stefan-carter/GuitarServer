@@ -11,8 +11,15 @@ fetch("/guitars/")
     })
     .catch(err => console.error(err))
 
+function getAddFormHtml() {
+    return `
+        
+
+    `
+}
+
 function render() {
-    const content = data.map((guitarData, i) => {
+    let content = data.map((guitarData, i) => {
         return `
             <article id="article">
                 <image id="data_images"src="${guitarData.image}" alt="${guitarData.name}"/>
@@ -23,6 +30,8 @@ function render() {
         `
 
     }).join("")
+
+    content += getAddFormHtml()
 
     const appEl = document.getElementById('ViewGuitars')
     console.log(appEl)
